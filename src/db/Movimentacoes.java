@@ -1,3 +1,5 @@
+package db;
+
 import java.sql.Date;
 import java.util.Objects;
 
@@ -84,7 +86,7 @@ public class Movimentacoes {
 
     @Override
     public String toString() {
-        return "Movimentacoes{" +
+        return "db.Movimentacoes{" +
                 "idMovimentacao=" + idMovimentacao +
                 ", movimentacao=" + movimentacao +
                 ", dataMovimentacao=" + dataMovimentacao +

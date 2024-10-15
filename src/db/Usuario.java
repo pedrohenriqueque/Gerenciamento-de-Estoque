@@ -1,3 +1,5 @@
+package db;
+
 import java.util.Objects;
 
 public class Usuario {
@@ -54,7 +56,7 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" +
+        return "db.Usuario{" +
                 "idUsuario=" + idUsuario +
                 ", nomeUsuario='" + nomeUsuario + '\'' +
                 ", senhaUsuario='" + senhaUsuario + '\'' +
