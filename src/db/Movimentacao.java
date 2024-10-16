@@ -3,7 +3,7 @@ package db;
 import java.sql.Date;
 import java.util.Objects;
 
-public class Movimentacoes {
+public class Movimentacao {
 
     private int idMovimentacao;
     private enum tipoMovimentacao {
@@ -18,7 +18,7 @@ public class Movimentacoes {
     private int produtoId;
 
 
-    public Movimentacoes(int idMovimentacao, int movimentacao, Date dataMovimentacao, String usuarioResponsavel, String observacao, int usuariosId, int produtoId) {
+    public Movimentacao(int idMovimentacao, int movimentacao, Date dataMovimentacao, String usuarioResponsavel, String observacao, int usuariosId, int produtoId) {
         this.idMovimentacao = idMovimentacao;
         this.movimentacao = movimentacao;
         this.dataMovimentacao = dataMovimentacao;
@@ -101,7 +101,7 @@ public class Movimentacoes {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Movimentacoes that = (Movimentacoes) o;
+        Movimentacao that = (Movimentacao) o;
         return idMovimentacao == that.idMovimentacao && movimentacao == that.movimentacao && usuariosId == that.usuariosId && produtoId == that.produtoId && Objects.equals(dataMovimentacao, that.dataMovimentacao) && Objects.equals(usuarioResponsavel, that.usuarioResponsavel) && Objects.equals(observacao, that.observacao);
     }
 

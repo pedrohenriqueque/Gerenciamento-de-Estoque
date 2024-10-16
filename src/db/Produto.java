@@ -17,6 +17,10 @@ public class Produto {
    private String descricao;
    private int estoque_minimo;
 
+    public Produto() {
+
+    }
+
     public int getId_produto() {
         return id_produto;
     }
