@@ -1,7 +1,8 @@
 package model;
 import db.Produto;
 
-import java.util.List;
+import java.util.ArrayList;
+
 
 public interface ProdutoDAO {
 
@@ -9,5 +10,6 @@ public interface ProdutoDAO {
         void atualizarProduto(Produto produto);
         void removerProduto(int id);
         Produto buscarProdutoPorId(int id);
-        List<Produto> listarTodosProdutos();
+        ArrayList<Produto> listarTodosProdutos();
+        void imprimirProdutos();
 }
